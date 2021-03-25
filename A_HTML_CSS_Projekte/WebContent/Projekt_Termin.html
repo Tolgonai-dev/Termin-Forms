@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Terminanfrage</title>
+		<style>
+			body{
+				text-align: left;
+			}
+			
+			.feldBemerkung{
+				background-color: #bdc3c7;
+			}
+			
+			input, .feldBemerkung, select {
+				font-size: 11px;
+				padding: 10px;
+				border: 1px solid #2c3e50;
+				border-radius: 5px;
+				margin: 5px 10px;
+				width: 380px;
+				box-sizing: border-box;
+			}
+			
+			
+			input[type=submit], [type=reset] {
+				background-color: #2c3e50;
+				color: white;
+			}
+			
+			input[type=text], [type=email], [type=file], [type=date], [type=time], select{
+				background-color: #bdc3c7;
+				
+			}
+			input:focus{
+				border: 1px solid #8e44ad;
+				background-color: #ecf0f1;
+			}
+			
+		</style>
+	</head>
+	<body style="background-color: beige">
+		<h2>Terminanfrage für die Einstufung Ihres Sprachniveaus.</h2>
+		
+		<form class="Formatierung">
+			<p>Bitte füllen Sie das nachstehende Formular für die Terminanfrage aus. Wir überprüfen zeitnah Ihren Terminwunsch
+			und senden Ihnen eine Bestätigung bzw. den n&auml;chst m&ouml;glichen freien Termin zu.</p>
+			
+			&nbsp;
+			
+			<!--<input type="text" name="anrede" value="" placeholder="Anrede" /><br>-->
+			<h3>Zur Person</h3>
+			
+			<b>Anrede</b><br>
+			<select>
+				<option>Bitte auswählen</option>
+			  <option>Frau</option>
+			  <option>Herr</option>
+			</select>
+			</label><br>
+			<b>Vorname:</b><br> 
+			<input type="text" name="vorname" value="" placeholder="Vorname" required/><br>
+			<b>Nachname:</b> <br> 
+			<input type="text" name="name" value="" placeholder="Nachname" required/><br>
+			<b>Email:</b><br> 
+			<input type="email" name="email" value="" placeholder="Email-Adresse" required/><br> 
+			<b>Telefonnummer:</b> <br> 
+			<input type="text" name="telefonNummer" value="" placeholder="Telefonnummer"/><br>
+			<b>Letztes Sprachzertifikat: :</b><br> 
+			<input type="file" name="myFile" value="Upload"/><br>
+			
+			&nbsp;
+			
+			<h3>Terminwahl</h3>
+			<p>Nächstmöglicher Termin</p>
+			
+			<b>ab folgendem Datum: </b><br> 
+			<input type="date" name="datum" value=""/><br>
+			
+			<b>zu/ab bestimmter Uhrzeit: </b><br> 
+			<input type="time" name="uhrzeit" value=""/><br>
+			
+			<b>zu bestimmten Wochentagen: </b><br> 
+			<select multiple>
+			  <option>Montag</option>
+			  <option>Dienstag</option>
+			   <option>Mittwoch</option>
+			  <option>Donnerstag</option>
+			   <option>Freitag</option>
+			</select>
+		
+			&nbsp;
+			
+			<h3>Zus&auml;tzliche Angaben</h3>
+			<p>Bemerkungen</p>
+			<textarea class="feldBemerkung"id="text" name="text" cols="35" rows="4"></textarea> <br>
+			
+			
+			<input type="submit" name="senden" value="Absenden"/>
+			<input type="reset" name="reset" value="Zur&uuml;cksetzen"/><br>
+		</form>
+	</body>
+</html>
+
+
+
